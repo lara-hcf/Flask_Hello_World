@@ -31,7 +31,7 @@ def carre(val_user):
 
 @app.route("/sommevaleur/<int:val_user>")
 def somme_valeur(val_user): 
-  print(app)
+   return app
 
 
                                                                                                                
