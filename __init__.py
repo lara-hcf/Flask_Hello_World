@@ -23,9 +23,9 @@ def carre(val_user):
   message=""
   
   if (resultat%2 == 0):
-    message="C'est pair"
+    message="<p>C'est pair</p>"
   else: 
-    message="C'est impair"
+    message="<p>C'est impair</p>"
       
   return "<h2>Le carre de votre valeur est : </h2>"+ str(val_user*val_user) + message
                                                                                                                
