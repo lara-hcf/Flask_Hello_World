@@ -31,9 +31,9 @@ def carre(val_user):
 
 @app.route("/somme")
 def somme_valeur(val_user): 
-   values= request.args.getlist('value', type=int)
-   sumval= sum(values)
-   return "<p>La somme des valeurs est </p>"+ str(sumval)
+   values= request.args.getlist('valeur')
+   somme_resultat= sum(int(v) for v in values)
+   return f"<p>La somme des valeurs : {somme_resultat}</p>"
 
 
                                                                                                                
