@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request
 from flask import render_template
 from flask import json
 import sqlite3
@@ -29,9 +29,11 @@ def carre(val_user):
       
   return "<h2>Le carre de votre valeur est : </h2>"+ str(val_user*val_user) + message
 
-@app.route("/sommevaleur/<int:val_user>")
+@app.route("/somme")
 def somme_valeur(val_user): 
-   return app
+   values= request.args.getlist('value', type=int)
+   sumval= sum(values)
+   return "<p>La somme des valeurs est </p>"+ str(sumval)
 
 
                                                                                                                
