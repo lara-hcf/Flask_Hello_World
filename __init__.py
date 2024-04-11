@@ -33,7 +33,7 @@ def carre(val_user):
 def somme_valeur(val_user): 
   print(app)
 
-  return message
+
                                                                                                                
 if __name__ == "__main__":
   app.run(debug=True)
