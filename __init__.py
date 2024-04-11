@@ -19,6 +19,12 @@ def maPremiereApi():
 
 @app.route("/calculcarre/<int:val_user>")
 def carre(val_user):
+   resultat = val_user*val_user
+   if (resultat%2==0) {
+      return "<p>c'est pair</p>"
+   } else {
+      return "<p>C'est impair </p>"
+   }
    return "<h2>Le carre de votre valeur est : </h2>"+ str(val_user*val_user)
                                                                                                                
 if __name__ == "__main__":
