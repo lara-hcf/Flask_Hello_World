@@ -28,6 +28,14 @@ def carre(val_user):
     message="<p>C'est impair</p>"
       
   return "<h2>Le carre de votre valeur est : </h2>"+ str(val_user*val_user) + message
+
+@app.route("/sommevaleur/<int:val_user>")
+def somme_valeur(val_user): 
+  message=""
+  for x in val_user: 
+    message= str(x)+ " "
+
+  return message
                                                                                                                
 if __name__ == "__main__":
   app.run(debug=True)
