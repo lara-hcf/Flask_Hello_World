@@ -30,7 +30,7 @@ def carre(val_user):
   return "<h2>Le carre de votre valeur est : </h2>"+ str(val_user*val_user) + message
 
 @app.route("/somme")
-def somme_valeur(val_user): 
+def somme_valeur(): 
    values= request.args.getlist('valeur')
    somme_resultat= sum(int(v) for v in values)
    return f"<p>La somme des valeurs : {somme_resultat}</p>"
